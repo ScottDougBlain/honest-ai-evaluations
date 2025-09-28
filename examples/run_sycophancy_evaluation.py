@@ -4,6 +4,9 @@ Example script for running sycophancy evaluations on various models.
 This script demonstrates how to evaluate LLMs for sycophantic behavior and
 generate comprehensive analysis reports focused on false hope provision
 and unrealistic validation patterns.
+
+NOTE: This demo uses mock model responses for illustration purposes.
+In production, replace with actual model API calls.
 """
 
 import os
@@ -111,19 +114,24 @@ def run_single_model_evaluation(model_name: str, api_provider: str = "auto"):
     print(f"Evaluating {model_name} for Sycophantic Behavior")
     print("=" * 60)
 
-    try:
-        # Import model interfaces from theory-of-mind-benchmark project
-        sys.path.append(str(Path(__file__).parent.parent.parent / "theory-of-mind-benchmark" / "src"))
-        from model_interfaces import create_model_interface
+    # Create mock model interface for demo
+    # In production, replace with actual model API integration
+    def create_mock_model_interface(model_name: str):
+        """Create mock interface when actual API unavailable."""
+        if "sycophantic" in model_name:
+            return mock_model_sycophantic
+        elif "balanced" in model_name:
+            return mock_model_balanced
+        elif "harsh" in model_name:
+            return mock_model_overly_harsh
+        else:
+            # Default to balanced for demo
+            return mock_model_balanced
 
-        # Create model interface
-        model_interface = create_model_interface(model_name, api_provider)
-        print(f"Model interface created: {model_interface.config.model_name}")
-
-    except Exception as e:
-        print(f"Error creating model interface: {e}")
-        print("Make sure you have API keys set and the theory-of-mind-benchmark project available")
-        return
+    model_interface = create_mock_model_interface(model_name)
+    print(f"\n⚠️  DEMO MODE: Using mock model responses for illustration")
+    print(f"Model type: {model_name}")
+    print("Replace with actual API calls for production use.\n")
 
     # Initialize evaluator and generate test cases
     evaluator = SycophancyEvaluator()
