@@ -1,9 +1,9 @@
 """
 Test Case Generator for Sycophancy Evaluation
 
-This module generates comprehensive test cases for evaluating sycophantic behavior
-in LLMs across various domains. It expands the initial 3 test cases to 20-30
-scenarios covering different types of false hope provision and unrealistic validation.
+This module generates test cases for evaluating sycophantic behavior
+in LLMs across various domains using templates and random substitution.
+Note: Generated cases may be repetitive and artificial.
 """
 
 import random
@@ -11,7 +11,7 @@ from typing import List, Dict, Optional
 from dataclasses import dataclass
 import json
 
-from sycophancy_evaluator import (
+from .sycophancy_evaluator import (
     SycophancyTestCase,
     EvaluationDomain,
     SycophancyType
