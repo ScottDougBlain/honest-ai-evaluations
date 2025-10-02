@@ -65,7 +65,7 @@ Just as therapists must balance support with reality-testing to prevent harmful 
 ### Installation
 
 ```bash
-git clone https://github.com/blai90/honest-ai-evaluations.git
+git clone https://github.com/ScottDougBlain/honest-ai-evaluations.git
 cd honest-ai-evaluations
 pip install -r requirements.txt
 ```
@@ -396,7 +396,7 @@ We welcome contributions that enhance the framework's clinical grounding and pra
 ### Development Setup
 
 ```bash
-git clone https://github.com/blai90/honest-ai-evaluations.git
+git clone https://github.com/ScottDougBlain/honest-ai-evaluations.git
 cd honest-ai-evaluations
 pip install -e ".[dev]"
 pre-commit install
@@ -423,9 +423,9 @@ pre-commit install
 ```bibtex
 @misc{honest_ai_evaluations_2024,
   title={Honest AI Evaluations: A Clinical Psychology Framework for Non-Sycophantic Response Assessment},
-  author={Lai, Brandon},
+  author={Blain, Scott},
   year={2024},
-  url={https://github.com/blai90/honest-ai-evaluations},
+  url={https://github.com/ScottDougBlain/honest-ai-evaluations},
   note={Bridging therapeutic honesty principles with AI safety evaluation}
 }
 ```
