@@ -432,8 +432,8 @@ pre-commit install
 
 ## Related Projects
 
-- **[LLM Hallucination Reduction](../llm-hallucination-reduction)**: Complementary work on epistemic humility
-- **[Theory of Mind Benchmark](../theory-of-mind-benchmark)**: Social cognition evaluation for AI safety
+- **[LLM Hallucination Reduction](https://github.com/ScottDougBlain/llm-hallucination-reduction)**: Complementary work on epistemic humility
+- **[Theory of Mind Benchmark](https://github.com/ScottDougBlain/theory-of-mind-benchmark)**: Social cognition evaluation for AI safety
 - **Anthropic's Constitutional AI**: Related work on helpful but non-sycophantic AI
 - **OpenAI's GPT-4 System Card**: Discussion of sycophancy risks and mitigations
 
