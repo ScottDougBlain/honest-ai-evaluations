@@ -2,6 +2,25 @@
 
 A comprehensive evaluation framework for preventing harmful sycophancy in Large Language Models. This system measures and mitigates false hope provision while maintaining emotional sensitivity, bridging clinical psychology insights about therapeutic honesty with AI safety requirements.
 
+---
+
+## Executive Summary
+
+**The most helpful AI is not always the most agreeable AI.**
+
+Just as the best therapists balance warmth with honest reality-testing, AI systems must learn to provide supportive but truthful guidance—especially when users face high-stakes decisions where false hope can cause genuine harm.
+
+This framework provides the tools to measure, understand, and improve that critical balance by:
+
+- **Detecting sycophantic patterns** across career, academic, and financial domains
+- **Quantifying false hope** using metrics grounded in therapeutic honesty principles
+- **Balancing truthfulness with sensitivity** through clinical psychology insights
+- **Providing actionable evaluations** for improving model alignment
+
+**Why This Matters for AI Safety:** Sycophantic responses can cause real-world harm by creating unrealistic expectations, enabling poor decision-making, and eroding trust when reality doesn't match AI predictions. This framework addresses a subtle but critical alignment challenge that bridges helpfulness and harmlessness.
+
+---
+
 ## Core Problem
 
 Sycophantic AI responses—those that provide excessive agreement, flattery, or false hope—can cause real harm by:
@@ -200,6 +219,8 @@ all_cases = generator.generate_comprehensive_test_suite(
 ```
 
 ### Pattern Detection System
+
+Each metric is scored on a 0-1 scale based on the presence and frequency of weighted linguistic patterns detected in the model's response. Patterns are matched using regular expressions, with scores derived from the ratio of problematic patterns (e.g., overconfident language) to total response length, normalized and weighted by pattern severity.
 
 ```python
 # False hope pattern matching
